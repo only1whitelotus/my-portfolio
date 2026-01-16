@@ -41,12 +41,6 @@ const social: Social = [
     essential: true,
   },
   {
-    name: "X",
-    icon: "X",
-    link: "https://x.com/only1whitelotus",
-    essential: true,
-  },
-  {
     name: "Email",
     icon: "email",
     link: `mailto:${person.email}`,
