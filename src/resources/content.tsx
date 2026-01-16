@@ -2,20 +2,20 @@ import { About, Blog, Gallery, Home, Newsletter, Person, Social, Work } from "@/
 import { Line, Row, Text } from "@once-ui-system/core";
 
 const person: Person = {
-  firstName: "Selene",
-  lastName: "Yu",
-  name: `Selene Yu`,
-  role: "Design Engineer",
+  firstName: "Akinjide",
+  lastName: "Akinola",
+  name: `Akinola Akinjide`,
+  role: "Creative Director",
   avatar: "/images/avatar.jpg",
-  email: "example@gmail.com",
-  location: "Asia/Jakarta", // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
-  languages: ["English", "Bahasa"], // optional: Leave the array empty if you don't want to display languages
+  email: "only1whitelotus@gmail.com",
+  location: "Africa/Lagos", // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
+  languages: ["English", "French", "Spanish"], // optional: Leave the array empty if you don't want to display languages
 };
 
 const newsletter: Newsletter = {
   display: true,
   title: <>Subscribe to {person.firstName}'s Newsletter</>,
-  description: <>My weekly newsletter about creativity and engineering</>,
+  description: <>My monthly newsletter about design and creativity</>,
 };
 
 const social: Social = [
@@ -25,25 +25,25 @@ const social: Social = [
   {
     name: "GitHub",
     icon: "github",
-    link: "https://github.com/once-ui-system",
-    essential: true,
+    link: "http://only1whitelotus.github.io/portfolio",
+    essential: false,
   },
   {
     name: "LinkedIn",
     icon: "linkedin",
-    link: "https://www.linkedin.com/company/once-ui/",
+    link: "https://www.linkedin.com/in/only1whitelotus?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app",
     essential: true,
   },
   {
     name: "Instagram",
     icon: "instagram",
-    link: "https://www.instagram.com/once_ui/",
-    essential: false,
+    link: "https://www.instagram.com/creativegenie1?igsh=c2ZhaTk3NGR2YmZh",
+    essential: true,
   },
   {
-    name: "Threads",
-    icon: "threads",
-    link: "https://www.threads.com/@once_ui",
+    name: "X",
+    icon: "X",
+    link: "https://x.com/only1whitelotus",
     essential: true,
   },
   {
@@ -60,7 +60,7 @@ const home: Home = {
   label: "Home",
   title: `${person.name}'s Portfolio`,
   description: `Portfolio website showcasing my work as a ${person.role}`,
-  headline: <>Building bridges between design and code</>,
+  headline: <>Crafting visuals that leaves lasting impact</>,
   featured: {
     display: true,
     title: (
@@ -76,7 +76,7 @@ const home: Home = {
   },
   subline: (
     <>
-    I'm Selene, a design engineer at <Text as="span" size="xl" weight="strong">ONCE UI</Text>, where I craft intuitive <br /> user experiences. After hours, I build my own projects.
+    I'm Akinola Akinjide also known as the creative genie or white lotus, a <Text as="span" size="xl" weight="strong">Creative Director</Text>, <br /> who tells stories through motion, working across video editing, directing, producing, and design to create cinematic visuals that look cool and unforgettable.
 </>
   ),
 };
@@ -102,9 +102,9 @@ const about: About = {
     title: "Introduction",
     description: (
       <>
-        Selene is a Jakarta-based design engineer with a passion for transforming complex challenges
-        into simple, elegant design solutions. Her work spans digital interfaces, interactive
-        experiences, and the convergence of design and technology.
+        I started as a graphic designer in 2020 before transitioning into video editing in late 2022
+        I have since worked with brands, organizations, and individuals, turning raw ideas into polished, cinematic visuals that capture attention and leave lasting impact
+        I work across shooting, directing, producing, and design, using tools like Adobe Photoshop, After Effects, and DaVinci Resolve to create concepts and visuals that speak for themselves.
       </>
     ),
   },
@@ -113,17 +113,15 @@ const about: About = {
     title: "Work Experience",
     experiences: [
       {
-        company: "FLY",
-        timeframe: "2022 - Present",
-        role: "Senior Design Engineer",
+        company: "CREATIVE BUILDERS",
+        timeframe: "Sep 2024 - Jun 2025",
+        role: "Creative Director",
         achievements: [
           <>
-            Redesigned the UI/UX for the FLY platform, resulting in a 20% increase in user
-            engagement and 30% faster load times.
+          Supervised and coordinated a team of intern video editors and designers, providing guidance and support to ensure their work aligns with the brands vision and quality standards.
           </>,
           <>
-            Spearheaded the integration of AI tools into design workflows, enabling designers to
-            iterate 50% faster.
+          Designed logos, marketing collateral, social media graphics and videos for top-tier clients.
           </>,
         ],
         images: [
@@ -137,17 +135,32 @@ const about: About = {
         ],
       },
       {
-        company: "Creativ3",
-        timeframe: "2018 - 2022",
-        role: "Lead Designer",
+        company: "Ciddy Fashion House",
+        timeframe: "Aug 2023 - Dec 2024",
+        role: "Brand Identity Manager",
         achievements: [
           <>
-            Developed a design system that unified the brand across multiple platforms, improving
-            design consistency by 40%.
+            Developed and maintained a cohesive brand identity, ensuring consistency across al marketing and product materials.
           </>,
           <>
-            Led a cross-functional team to launch a new product line, contributing to a 15% increase
-            in overall company revenue.
+            Managed and directed visual content creation, including graphics, packaging, promotional materials and videos.
+          </>,
+        ],
+        images: [],
+      },
+      {
+        company: "Bells University Students Association",
+        timeframe: "2023- 2024",
+        role: "Media Director",
+        achievements: [
+          <>
+            Spearheaded the rebranding of the association, producing dynamic visuals and engaging content that enhanced it's public image.
+          </>,
+          <>
+            Conceptualized, branded, handled production and launched a students lifestyle podcast, establishing a new platform for student engagement and content creation.
+          </>,
+          <>
+            Successfully branded and created promotional content (graphics and videos) for the University's football league and the biggest annual festival (La festival de Bells).
           </>,
         ],
         images: [],
@@ -159,12 +172,8 @@ const about: About = {
     title: "Studies",
     institutions: [
       {
-        name: "University of Jakarta",
-        description: <>Studied software engineering.</>,
-      },
-      {
-        name: "Build the Future",
-        description: <>Studied online marketing and personal branding.</>,
+        name: "Bells University of Technology",
+        description: <>Studied mechatronics engineering.</>,
       },
     ],
   },
